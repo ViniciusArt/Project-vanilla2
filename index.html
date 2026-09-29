@@ -1,55 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conversor de moedas</title>
-    <link href='https://fonts.googleapis.com/css?family=Pixelify+Sans' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Conversor de moedas 💵</h1>
-
-    <div class="container">
-        <div class="operacao">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Conversor de moedas</title>
+        <link href='https://fonts.googleapis.com/css?family=Pixelify+Sans' rel='stylesheet'>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Conversor de moedas 💵</h1>
         
-            <h2>Digite o valor:</h2> 
-            <input type="number" id="dignum">
-        </div>
-
-        <div class="operacao">
-            <h2>De:</h2>
-            <select name="moeda1" id="moeda1">
+        <div class="container">
+            <div class="operacao">
+                
+                <h2>Digite o valor:</h2> 
+                <input type="number" id="dignum">
+            </div>
+            
+            <div class="operacao">
+                <h2>De:</h2>
+                <select name="moeda1" id="moeda1">
                 <option value="item1">Real</option>
                 <option value="item2">Euro</option>
                 <option value="item3">Yen</option>
                 
             </select>
-
+            
         </div>
-
+        
         <div class="operacao">
             <h2>Para:</h2>
             <select name="moeda2" id="moeda2">
                 <option value="item1">Real</option>
                 <option value="item2">Euro</option>
                 <option value="item3">Yen</option>
-    
+                
             </select>
+            <input type="button" value="ok" id="botaoOK">
         </div>
-    
+        
     </div>
     
     <div id="res">
         R$1.000.000.000,00
     </div>
+    
+    <script src="script.js" defer></script>  
+    <!-- defer faz com que meu script só rode dps que todo html carregar -->
 
 
-
+    
+    <footer>
+        <br><br><br><br>
+        <p id="github">&copy; ViniArt</p>
+    </footer>
 </body>
 
-<footer>
-    <br><br><br><br>
-    <p id="github">&copy; ViniArt</p>
-</footer>
 </html>
