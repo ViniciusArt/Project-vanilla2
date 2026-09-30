@@ -19,22 +19,18 @@
             
             <div class="operacao">
                 <h2>De:</h2>
-                <select name="moeda1" id="moeda1">
-                <option value="item1">Real</option>
-                <option value="item2">Euro</option>
-                <option value="item3">Yen</option>
-                
+                <select name="moeda1" id="moeda1" class="operacaoSelect" required>
+                    <option value="" disabled selected hidden>Selecione uma moeda</option>
+                <!-- option criadas dinamicamente -->                
             </select>
             
         </div>
         
         <div class="operacao">
             <h2>Para:</h2>
-            <select name="moeda2" id="moeda2">
-                <option value="item1">Real</option>
-                <option value="item2">Euro</option>
-                <option value="item3">Yen</option>
-                
+            <select name="moeda2" id="moeda2" class="operacaoSelect" required>
+                <option value="" disabled selected hidden>Selecione uma moeda</option> <!-- cria um placeholder que so pode ser clicado uma vez -->
+                <!-- option criadas dinamicamente -->
             </select>
             <input type="button" value="ok" id="botaoOK">
         </div>
