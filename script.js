@@ -2,17 +2,23 @@ money();//commit: chamei a função no inicio do codigo para obter as informaç�
 let dignum = document.querySelector('#dignum');
 let select1 = document.querySelector('#moeda1');
 let select2 = document.querySelector('#moeda2');
-
+const res = document.querySelector('#res');
 
 document.querySelector('#botaoOK').addEventListener('click', run);
-function run(){
+async function run(){ //a função passou a ser async para poder ter await
     if(dignum.value == '')
         {
             alert('Digite um valor')
         }
         else
             {
-                alert('funciona')
+                const dados = await fetch (`https://api.frankfurter.dev/v1/latest?from=${select1.value}&to=${select2.value}`)
+                const dadosBuscados = await dados.json();
+               // let resultado = Object.entries(dadosBuscados.rates); //A ideia inicial era mais complexa que o necessario
+                console.log(dignum.value * dadosBuscados.rates[select2.value])
+                let resultado = dignum.value * dadosBuscados.rates[select2.value]
+                res.innerText = `${resultado.toFixed(2)}`
+                
             }
         }
 
