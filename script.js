@@ -44,3 +44,9 @@ async function run(){ //a função passou a ser async para poder ter await
     }
 }
 
+document.querySelector('#imgSwitch').addEventListener('click', switchBtn);
+
+function switchBtn(btn)
+{
+    alert('switch')
+}
