@@ -25,6 +25,10 @@ h2{
     font-size: 19px;
 }
 
+select{
+    cursor: pointer;
+}
+
  .container
 {
     display: flex;
@@ -45,4 +49,20 @@ h2{
 #botaoOK{
     width: 30px;
     margin-left: 20px;
+    cursor: pointer;
 }
+
+#imgSwitch{
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#moeda1{
+    order: 1;
+}
+
+#moeda2{
+    order: 2;
+}
+
+
