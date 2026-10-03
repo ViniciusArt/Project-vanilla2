@@ -28,6 +28,9 @@ O projeto consome dois endpoints da Frankfurter API:
 - `GET /v1/currencies` — retorna todas as moedas suportadas (código + nome), usado para popular os seletores dinamicamente
 - `GET /v1/latest?from=X&to=Y` — retorna a taxa de câmbio mais recente entre duas moedas, usado no momento da conversão
 
+<img width="1353" height="593" alt="image" src="https://github.com/user-attachments/assets/a55519bd-f9b1-4cce-9111-599f66f24ae7" />
+
+
 ## 👤 Autor
 
 ViniArt
